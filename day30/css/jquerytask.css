@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  height: 100px;
+  background-color: goldenrod;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+}
+nav{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  color: aquamarine;
+}
+.menu > li{
+ position: relative;
+ float: left;
+ margin: 0 10px;
+ padding: 0px;
+ line-height: 50px; 
+ display: block;
+ color: blueviolet;
+}
+main{
+  background-color: chartreuse;
+  padding: auto;
+  margin: auto;
+  height: 700px;
+  width: 100%;
+}
+footer{
+  background-color: black;
+}

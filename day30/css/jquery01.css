@@ -1,0 +1,11 @@
+.div-box{
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  margin : 10px;
+  border: 1px solid black;
+}
+
+main{
+  display: flex;
+}
