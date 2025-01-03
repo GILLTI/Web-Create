@@ -1,0 +1,80 @@
+day 04 
+
+복습
+	입력클래스
+		import.java.util.Scanner
+	
+		Scanner sc = new Scanner(System.in); 
+		자동import 단축키 = ctrl + shift + o
+
+	입력메소드
+		next(), nextInt(), nextDouble(), nextLine()
+
+	sc.close()
+	
+	연산자 우선순위
+	
+		최우선 . ()
+		단항	+ ,-, 증감연산자 (++, --), !
+		산	+, -, *, /, %
+		쉬	<<, >>
+		관	>, <, >=, <=, ==, !=
+		리	and(&&), or(||), not(!)
+		삼	
+		대	=
+
+	복합대입연산자, 누적연산자
+	+=, -=, *=, /=, %=
+
+----------------------------------------------------
+1) 입력 메소드
+	import java.util.Scanner
+	Scanner sc = new Scanner(System.in);
+	// ctrl + shift + o : import 자동완성 단축키
+
+	next()		엔터 x 입력받은 값을 문자열로 반환
+	nextInt()	엔터 x 입력받은 값을 정수형으로 반환
+	nextDouble()	엔터 x 입력받은 값을 실수형으로 반환
+	nextLine()	입력받은 값을 문자열로 반환(엔터를 소모한다)
+
+2) 연산자
+	연산자의 우선순위
+	최 단 산 쉬 관 리 삼 대
+	
+	단항연산자		+, -, ++, --, !
+	
+	증감연산자
+		int num = 10;
+		int result = num-- + 5 + --num;
+		
+		1) num-- + 5	//현재 num : 10, 연산결과 : 15
+				//덧셈 연산 수행 후 num : 9
+		2) --num	//현재 num : 8
+		3) 15 + 8	// 23
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

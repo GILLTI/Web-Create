@@ -1,0 +1,83 @@
+문제 1)))))))))))))))
+
+Scanner sc = new Scanner(System.in); //입력 받을 수 있도록 스캐너를 sc변수로 선언
+         int numj = 5000, nump = 8000, numz = 25000, numh = 6000; 
+	//각 메뉴의 가격을 담을 변수를 정수로 선언
+         
+	String jang = "짜장", pig = "돈까스", za = "피자", hem = "햄버거", input = ""; 
+	//메뉴의 이름을 String으로 지정해서 변수에 저장
+         boolean cham = true; //반복문 while을 제어하기 위한 True, False를 Boolean타입 지정
+         
+         while(cham) { 
+	//while문 시작하기 (cham이 False가 될때까지)
+            System.out.println("짜장 (5000원), 돈까스 (8000원), 피자 (25000원), 햄버거 (6000원)");
+            
+	input = sc.nextLine(); 
+	//메뉴를 받기 위해 nextLine으로 해서 입력 받기
+            
+            if(input.equals(jang)) { 
+		//만약 입력받은 input이 jang변수와 저장된 값이 맞다면
+               
+		System.out.println(jang+numj); 
+		//jang변수 + numj변수 불러와 출력하기
+               
+		cham = false; 
+		//while문을 탈출하기 위해 Boolean값을 false로 재할당 하여 while문 제어하기
+            }else if(input.equals(pig)) { 
+               System.out.println(pig+nump);
+               cham = false;
+            }else if(input.equals(za)) {
+               System.out.println(za+numz);
+               cham = false;
+            }else if(input.equals(hem)) {
+               System.out.println(hem+numh);
+               cham = false;
+            }else { 
+		//만약 위 조건들이 충족하지 않다면? 잘못된 값을 적은것.
+               
+		System.out.println("재입력"); //재입력하라고 하고 Boolean은 지정 안했기 때문에 while문은 계속 반복됨
+            }
+            
+         }
+   }
+
+===============================================================
+
+//				//				
+문제 2)))))))))))))))))))))))
+
+//	      사용자로부터 문자를 입력받아 아스키코드 값을 확인하고
+//	      입력받은 문자를 아스키코드 값으로 변환한다
+//	      
+//	      사용자가 입력한 문자와 그 아스키코드를 출력하는데 반복문을 사용하여
+//	      여러번 입력받도록 한다'A'를 입력하면 종료하고 종료 메시지를 출력한다
+	            Scanner sc = new Scanner(System.in); //입력 받기 위해 sc로 변수 선언
+
+
+	      final char finish = 'A';
+		//A값은 탈출하는 문자이기 때문에 상수로 지정
+
+	      while (true) {
+		//while문 제어없이 반복하기
+	         System.out.print("문자를 입력하세요 : "); //출력~~~
+
+	         char input = sc.next().charAt(0);
+		//입력 받는 next는 char가 아닌 String
+	         	
+			sc.nextLine();
+	         if (input == finish) {
+		//만약 입력 받은 값이 finish변수와 같다면
+
+	            System.out.println("프로그램 종료");
+	            break;//반복문 탈출하기
+
+	         }
+
+	         System.out.println(input + " " + (int) input);
+		//입력 받은 값을 아스키코드로 변환해주기
+
+	      }
+			sc.close();	
+				
+			}
+}

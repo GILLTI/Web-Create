@@ -1,0 +1,17 @@
+day 30	
+
+MVC패턴 -> jdbc
+	
+1. 소프트웨어 디자인 설계 패턴
+MVC
+	M(Model)	테이블에서 조회된 결과값을 담기 위한 변수들이 선언된 클래스
+			클래스명 뒤에 VO, DTO라는 문자열을 붙여준다
+			VO(Value Object) : 테이블을 보고 그대로 만든 객체
+			DTO(Data Transfer Object) : 화면에 결과를 한번에 묶어서 전달할 객체
+
+	V(View)		사용자에게 보여질 화면을 구성하는 부분
+			Controller에 선언된 crud 메소드를 사용하는 부분 
+
+	C(Controller)  jsp에서 자세히
+			DAO(Data Access Object) : 테이블에 접근할 수 있는 메소들이 선언된 클래스 
+				접근 후 결과겂이 있을 경우 Model 객체에 담은 후 처리

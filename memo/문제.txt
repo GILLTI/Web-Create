@@ -1,0 +1,126 @@
+package iftest;
+
+import java.util.Scanner;
+
+public class IfTest04 {
+			public static void main(String[] args) {
+				//삼행연산자로 작성했던 두 수를 입력받아 큰 수 출력하기
+				// => if ~else if ~ else문으로 변경
+				
+				//1) 입력클래스 import
+				//2) 변수 선언 int 2개
+				//3) 입력 메시지 출력
+				//4) 조건문(if ~ else if ~ else문)
+				//4-1) if (변수 1 > 변수 2)
+				//4-2) 		변수1이 변수2보다 큽니다 출력
+				//4-3)	}else if(변수1 == 변수2){
+				//4-4) 		변수1과 변수2가 같습니다 출력
+				//4-5)	}else{
+				//4-6)		변수2가 변수1보다 큽니다 출력
+				//		}
+				
+				int num1 = 0, num2 = 0;
+				Scanner sc = new Scanner(System.in);
+				System.out.println("두 수를 입력하시오 : ");
+				num1 = sc.nextInt();				
+				num1 = sc.nextInt();				
+				
+					if(num1 > num2) {
+						System.out.printf("%d가 %d보다 %d 더 큽니다", num1, num2, (num1-num2));
+						}else if(num1 == num2) {
+							System.out.printf("%d와 %d가 같습니다", num1, num2);
+						}else {
+							System.out.printf("%d가 %d보다 %d 더 큽니다", num2, num1, (num2-num1
+									));
+						}
+						
+			}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+문제1) 입력한 갯수만큼 늘어나는 반칸 다이아 만들기
+     *
+    * *	
+   * * *
+  * * * *
+ * * * * * 	
+* * * * * * 
+ * * * * *
+  * * * *
+   * * *
+    * *
+     *
+
+문제2)    금액을 넣어주세요 : 입력값
+   메뉴 출력 1~4번까지
+      1 콜라 : 250
+      2 사이다 : 200
+      3 커피 : 400
+      4 식혜 : 500
+	"금액을 넣어주세요 : "메시지 출력
+	"현재 금액 얼마 : :" 메시지 출력
+	
+
+
+   거스름돈과 잔액부족 표시 출력하고
+   음료수가 나왔습니다 메시지 출력
+   음료수 갯수 n 개 표현
+   음료수 나오거나 잔액부족하면 종료시키기
+  
+
+	
+
+문제2)    금액을 넣어주세요 : 입력값
+   메뉴 출력 1~4번까지
+      1 콜라 : 2500
+      2 사이다 : 2000
+      3 커피 : 4000
+      4 잔액반환
+   거스름돈과 잔액부족 표시 출력하고
+   음료수가 나왔습니다 메시지 출력
+   음료수 갯수 n 개 표현
+   음료수 나오거나 잔액부족하면 종료시키기
+	
+ System.out.println("방법 1------------");        
+for(int i=1; i<=5; i++) {               
+for (int j=1; j<=5-i; j++) {                
+System.out.print("  "); //공백             
+}            
+for (int j=1; j<=i; j++) {                
+System.out.print("* "); //별반            
+}            
+for (int j=2; j<=i; j++) {                
+System.out.print("* ");//나머지별반틈.            }            
+System.out.println();                    
+}        //하단          
+for(int i=1; i<=5; i++) {               
+for (int j=1; j<=i; j++) {                
+System.out.print("  ");            
+}            
+for (int j=1; j<=5-i; j++) {                
+System.out.print("* ");            
+}            
+for (int j=3; j>=i; j--) {                
+System.out.print("* ");            
+}            
+System.out.println();
+
+
+
+

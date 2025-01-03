@@ -1,0 +1,73 @@
+1. 사용자로부터 3개의 정수를 입력받아 아래 요구사항대로 구현하라
+
+- 배열은 사용하면 안된다
+1) 최소값과 최대값 출력
+2) 5개 숫자의 평균을 소수점 2자리까지 출력
+
+2. 15부터 30까지 중 짝수의 합을 출력하라
+- 단 WHILE문을 사용할 것
+
+3. 아래 내용과 동일하게 출력하라
+1) 피라미드
+  *
+ * *
+* * *
+
+2) 입력받은 수 만큼 직각삼각형 출력
+*
+**
+***
+****
+
+4. 학생 성적관리 프로그램을 구현하라
+요구사항
+1) PERSON클래스
+ 필드 PRIVATE : STRING NAME
+ 생성자 : 이름을 매개변수로 받아 초기화
+ 메소드 : getName() : name필드값을 반환
+
+2) student 클래스
+ person 클래스 상속
+- 필드 private : int javaScore, int dbmsScore, int htmlScore
+- 생성자 : Person의 생성자를 호출하고, 각 점수 초기화
+- 메소드 : getTotalScore: 세 과목 점수를 더한 값을 반환
+	getAverageScore : 평균으로 반환
+
+3) main 클래스
+	메인 메소드 구현
+	student 객체를 생성하여 이름과 점수를 입력받는다(입력받을 점수는 0~100 범위내, 입력클래스사용)
+	각 학생의 총점과 평균을 출력한다
+
+
+5. 동물원 프로그램을 구현
+요구사항
+1) 추상클래스 animal
+필드 string name : 동물이름(protected)
+생성자 : 이름을 매개변수로 받아 초기화
+메소드 string getname(): 동물의 이름을 반환
+ 	void performActions() : 추상메소드, 동물의 행동을 출력
+
+2) pet 클래스
+	animal 추상 클래스를 상속받아 구현
+생성자 
+ name을 매개변수로 받아 초기화
+메소드
+ void play() : 동물이 장난치는 행동을 출력
+ void eat() : 동물이 먹는 행동을 출력
+ void sleep() : 동물이 잠자는 행동을 출력
+ void performActions() : 위 세 메소드를 호출하여 행동을 출력
+
+3) zoo 클래스
+필드 
+	animal[] animals : 동물객체 배열
+	int animalCount : 현재 동물 수
+생성자
+	배열 크기를 매개변수로 받아 초기화
+메소드
+	void addAnimal : 동물을 배열에 추가, 매개변수는 참조변수의 다형성 이용할 것
+	배열 크기를 초과하면 " 더 이상 동물을 추가할 수 없습니다 " 를 출력
+	void printAllanimals(): 모든 동물의 이름과 행동을 출력
+
+4) mian 클래스 
+	zoo 객체를 생성하여 (3마리) pringallmals() 메소드를 호출하여 모든 동물의 행동을 출력
+ 
